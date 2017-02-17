@@ -1,0 +1,134 @@
+[
+	{
+		"ID" : 1,
+		"Item" : "Wildcat Burger",
+		"Price" : "$5.99 ",
+		"Category" : "Grill"
+	},
+	{
+		"ID" : 2,
+		"Item" : "Cajun Burger",
+		"Price" : "$5.79 ",
+		"Category" : "Grill"
+	},
+	{
+		"ID" : 3,
+		"Item" : "Crunchy Jalapeno Burger",
+		"Price" : "$5.99 ",
+		"Category" : "Grill"
+	},
+	{
+		"ID" : 4,
+		"Item" : "Smokehouse Burger ",
+		"Price" : "$5.99 ",
+		"Category" : "Grill"
+	},
+	{
+		"ID" : 5,
+		"Item" : "Lettuce Wrap Burger",
+		"Price" : "$5.99 ",
+		"Category" : "Grill"
+	},
+	{
+		"ID" : 6,
+		"Item" : "Cheeseburger ",
+		"Price" : "$5.39 ",
+		"Category" : "Grill"
+	},
+	{
+		"ID" : 7,
+		"Item" : "Hamburger",
+		"Price" : "$4.89 ",
+		"Category" : "Grill"
+	},
+	{
+		"ID" : 8,
+		"Item" : "Burger on the Greens",
+		"Price" : "$6.59 ",
+		"Category" : "Grill"
+	},
+	{
+		"ID" : 9,
+		"Item" : "Black Bean Baby Blue",
+		"Price" : "$6.79 ",
+		"Category" : "Grill"
+	},
+	{
+		"ID" : 10,
+		"Item" : "Smokehouse Black Bean Burger ",
+		"Price" : "$6.79 ",
+		"Category" : "Grill"
+	},
+	{
+		"ID" : 11,
+		"Item" : "Southwestern Black Bean Burger ",
+		"Price" : "$6.79 ",
+		"Category" : "Grill"
+	},
+	{
+		"ID" : 12,
+		"Item" : "Black Bean Burger on the Greens",
+		"Price" : "$6.99 ",
+		"Category" : "Grill"
+	},
+	{
+		"ID" : 13,
+		"Item" : "Black Bean Burger",
+		"Price" : "$5.99 ",
+		"Category" : "Grill"
+	},
+	{
+		"ID" : 14,
+		"Item" : "Spinach Chicken",
+		"Price" : "$6.99 ",
+		"Category" : "Grill"
+	},
+	{
+		"ID" : 15,
+		"Item" : "Grilled Chicken Baby Blue",
+		"Price" : "$6.89 ",
+		"Category" : "Grill"
+	},
+	{
+		"ID" : 16,
+		"Item" : "Chipotle Grilled Chicken",
+		"Price" : "$6.89 ",
+		"Category" : "Grill"
+	},
+	{
+		"ID" : 17,
+		"Item" : "Fried Chicken Sandwich",
+		"Price" : "$6.59 ",
+		"Category" : "Grill"
+	},
+	{
+		"ID" : 18,
+		"Item" : "Grilled Chicken Sandwich",
+		"Price" : "$5.99 ",
+		"Category" : "Grill"
+	},
+	{
+		"ID" : 19,
+		"Item" : "Chicken Filet Sandwich",
+		"Price" : "$5.89 ",
+		"Category" : "Grill"
+	},
+	{
+		"ID" : 20,
+		"Item" : "Grilled Chicken Lettuce Wrap",
+		"Price" : "$6.29 ",
+		"Category" : "Grill"
+	},
+	{
+		"ID" : 21,
+		"Item" : "Chicken Philly",
+		"Price" : "$6.99 ",
+		"Category" : "Grill"
+	},
+	{
+		"ID" : 22,
+		"Item" : "Grilled Chicken on the Greens",
+		"Price" : "$6.99 ",
+		"Category" : "Grill"
+	}
+]

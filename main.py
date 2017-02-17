@@ -1,7 +1,8 @@
 from openpyxl import Workbook
 import time, ConfigParser
 import csv
-
+import json
+import os
 def init_ini():
 	config = ConfigParser.ConfigParser()
 	config.add_section("TIME")
@@ -28,15 +29,20 @@ def update_time():
 	config.set("TIME","wday",cur.tm_wday)
 	config.write(open('config.ini',"r+"))
 
-def read_csv():
-	with open('menu.csv','rb') as csvfile:
-		csvreader = csv.reader(csvfile, delimiter = ',', quotechar = '|')
-		for row in csvreader:
-			print row
+def get_path(id):
+	path = "img/"
+	gif = ".gif"
 
-def save_set():
-	
+	return (os.path.abspath(path + id + gif))
+
+
+def read_json():
+	with open('menu_json.json') as json_data:
+		d = json.load(json_data)
+    	print(d[0]["Price"])
+
 if __name__ == '__main__':
-    init_ini()
-    update_time()
-    read_csv()
+	init_ini()
+	update_time()
+	read_json()
+	print (get_path("1"))
