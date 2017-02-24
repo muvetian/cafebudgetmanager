@@ -28,7 +28,34 @@ def update_time():
 	config.set("TIME","mday",cur.tm_mday)
 	config.set("TIME","wday",cur.tm_wday)
 	config.write(open('config.ini',"r+"))
+def calculate_remaining_dollars(items):
+	remaining_dollars = float(get_remaining_dollars())
+	for item in items:
+		remaining_dollars = remaining_dollars - float(get_item_price(item))
+		print (float(get_item_price(item)))
 
+	update_remaining_dollars(remaining_dollars)
+	return remaining_dollars
+
+
+def get_item_price(name):
+	with open('menu_json.json') as json_data:
+		d = json.load(json_data)
+		result = 0.0
+		for i in range(len(d)):
+			if d[i]["Item"] == name:
+				result = float((d[i]["Price"]))
+    	return result
+
+def update_remaining_dollars(value):
+	config = ConfigParser.ConfigParser()
+	config.read('config.ini')
+	config.set("OPTION","rmeal",value)
+	config.write(open('config.ini',"w"))
+def get_remaining_dollars():
+	config = ConfigParser.ConfigParser()
+	config.read('config.ini')
+	return config.get("OPTION","rmeal")
 def get_path(id):
 	path = "img/"
 	gif = ".gif"
@@ -36,13 +63,16 @@ def get_path(id):
 	return (os.path.abspath(path + id + gif))
 
 
-def read_json():
+def get_item_name(id):
 	with open('menu_json.json') as json_data:
 		d = json.load(json_data)
-    	print(d[0]["Price"])
+    	return (d[id]["Item"])
 
 if __name__ == '__main__':
-	init_ini()
-	update_time()
-	read_json()
-	print (get_path("1"))
+	# init_ini()
+	# update_time()
+	print(get_item_name(1))
+	# print (get_path("1"))
+	update_remaining_dollars(5)
+	print (get_remaining_dollars())
+	
